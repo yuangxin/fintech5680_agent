@@ -130,34 +130,9 @@ streamlit run app.py
 
 启动后系统将自动打开浏览器，访问地址通常为: `http://localhost:8501`
 
-### 方式二：命令行启动
+### 方式二：访问链接
 
-```bash
-# 基础检测
-python -m plagiarism_checker.cli --submissions-dir dataset --output-dir test_output
-
-# 启用 AI Agent 分析
-python -m plagiarism_checker.cli --submissions-dir dataset --enable-agent --agent-threshold 0.6 --output-dir test_output
-
-# 多语言检测
-python -m plagiarism_checker.cli --submissions-dir dataset --enable-multilingual --output-dir test_output
-
-# 并行加速
-python -m plagiarism_checker.cli --submissions-dir dataset --parallel --workers 4 --output-dir test_output
-```
-
-### 命令行参数说明
-
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--submissions-dir` | 输入文件夹路径 | `./paraphrase_outputs` |
-| `--model-name` | 嵌入模型名称 | `all-MiniLM-L6-v2` |
-| `--device` | 计算设备 | `None`(自动) |
-| `--threshold` | 相似度阈值 | `0.82` |
-| `--enable-agent` | 启用AI分析 | `False` |
-| `--agent-threshold` | Agent触发阈值 | `0.70` |
-| `--parallel` | 启用并行处理 | `False` |
-| `--enable-multilingual` | 启用多语言 | `False` |
+https://5701new-bsezgoxphrf3gwf6kb47ba.streamlit.app/
 
 ## 📦 安装与依赖
 
@@ -387,4 +362,5 @@ if self.provider == 'your_provider':
 
 **项目维护者**: Plagiarism Detection Team  
 **最后更新**: 2024年11月17日  
+
 **版本**: v2.1
